@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Varsha Sri Chukka · Portfolio</title>
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#94a3b8; --accent:#38bdf8; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    header{position:sticky;top:0;background:rgba(15,23,42,.95);backdrop-filter:blur(6px);border-bottom:1px solid #1f2937}
+    nav{max-width:1000px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 16px}
+    .brand{font-weight:700;font-size:1.2rem}
+    .links a{margin-left:14px}
+    main{max-width:1000px;margin:28px auto;padding:0 16px;display:grid;gap:24px}
+    section{background:var(--card);border:1px solid #1f2937;border-radius:16px;padding:20px}
+    h1,h2{margin:.2em 0 .6em}
+    .about-wrap{display:grid;grid-template-columns:180px 1fr;gap:16px;align-items:start}
+    img.avatar{width:180px;height:180px;object-fit:cover;border-radius:12px;border:1px solid #1f2937}
+    ul{padding-left:18px;margin:0}
+    .pill{display:inline-block;border:1px solid #374151;border-radius:999px;padding:4px 10px;margin:4px 6px 0 0;font-size:.9rem;color:var(--muted)}
+    footer{max-width:1000px;margin:12px auto 32px;padding:0 16px;color:var(--muted);text-align:center}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid #374151}
+    .grid{display:grid;gap:12px}
+    @media (max-width:720px){ .about-wrap{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">Varsha Sri Chukka</div>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a class="btn" href="project.html">Project Page →</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-wrap">
+        <!-- Add your photo as image/varsha.jpg -->
+        <img class="avatar" src="image/varsha.jpg" alt="Varsha Sri Chukka" />
+        <div>
+          <p>Hi 👋 I’m <strong>Varsha Sri Chukka</strong>, a 3rd-year B.Tech CSE (AI/ML) student at SR University.  
+          I’m passionate about Web Development, Artificial Intelligence, and applying Data Science techniques to real-world problems.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, Java, JavaScript</li>
+        <li><strong>Web:</strong> HTML, CSS</li>
+        <li><strong>Tools & Frameworks:</strong> Scikit-learn, Pandas, NumPy, Matplotlib</li>
+        <li><strong>Others:</strong> Git, VS Code, Jupyter, MySQL</li>
+      </ul>
+      <h3>Soft Skills</h3>
+      <div>
+        <span class="pill">Communication</span>
+        <span class="pill">Leadership</span>
+        <span class="pill">Teamwork</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div>
+          <h3>Virtual Garden Website</h3>
+          <p>Platform to learn about medical & Ayurvedic plants. Developed using Flask, Python, and image classification techniques.</p>
+        </div>
+        <div>
+          <h3>Liver Cancer Prediction</h3>
+          <p>Built using statistical Machine Learning models for early detection and analysis.</p>
+        </div>
+        <div>
+          <h3>Hybrid SVM & ANN Model</h3>
+          <p>Applied Support Vector Machine and ANN for solar radiation forecasting using Python.</p>
+        </div>
+      </div>
+      <p><a class="btn" href="project.html">View All Projects</a></p>
+    </section>
+
+    <section id="achievements">
+      <h2>Hackathons & Achievements</h2>
+      <ul>
+        <li>Finalist, <strong>Smart India Hackathon</strong></li>
+        <li>Participated in multiple University-level hackathons (Python/Java based)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Varsha Sri Chukka · Portfolio</small>
+  </footer>
+</body>
+</html>
